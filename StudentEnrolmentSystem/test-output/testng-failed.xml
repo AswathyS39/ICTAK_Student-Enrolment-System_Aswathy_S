@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.studennrol.testscripts.EmpProfileHomePgTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="verifyProfileName"/>
+          <include name="browserSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.studennrol.testscripts.EmpProfileHomePgTest -->
+      <class name="com.studennrol.testscripts.EmpAllStudentPageTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="studMarkEnterBtnVerify"/>
+          <include name="studDetailsBtnVerify"/>
+          <include name="browserSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.studennrol.testscripts.EmpAllStudentPageTest -->
+      <class name="com.studennrol.testscripts.EmpStudDetailsPgTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="studentMarkVerify"/>
+          <include name="browserSetup"/>
+          <include name="studentNameVerify"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.studennrol.testscripts.EmpStudDetailsPgTest -->
+      <class name="com.studennrol.testscripts.EmpMarkEntryPageTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="verifyNullEEMarkTB"/>
+          <include name="browserSetup"/>
+          <include name="verifyEENameTB"/>
+          <include name="verifyInvalidEEMarkTB"/>
+          <include name="verifyValidEEMarkTB"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.studennrol.testscripts.EmpMarkEntryPageTest -->
+      <class name="com.studennrol.testscripts.EmpRegisterPageTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="verifyRegistration" invocation-numbers="2 3 4"/>
+          <include name="browserSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.studennrol.testscripts.EmpRegisterPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
